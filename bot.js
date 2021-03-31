@@ -17,6 +17,8 @@ client.on('ready', () => {
 client.on('message', (msg) => {
 	if (msg.content === '/date') {
 		msg.reply(`Today Date: ${new Date()}`);
+	} else if (msg.content === '/bgreview') {
+		msg.reply(`Check out https://tinyurl.com/gcpbgreview`);
 	} else if (msg.content.substring(0, 3) == '/4d') {
 		let index = Math.floor(Math.random() * 10000);
 		msg.reply(`Predicted 4d Number: ${index}`);
